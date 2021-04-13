@@ -1,0 +1,70 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author franfathur
+ */
+public class Employee {
+    
+ private String nama;
+    private int id;
+    private String jurusan;
+    private String posisi;
+    
+    
+        public Employee (String nama, int id, String jurusan, String posisi) {
+            this.nama = nama;
+            this.id = id;
+            this.jurusan = jurusan;
+            this.posisi = posisi;
+        }
+        
+    public String getnama(){
+        return nama;
+    }
+    
+    public void setnama(String nama){
+        this.nama = nama;
+    }
+    
+    public int getid(){
+        return id;
+    }
+    
+    public void setid(int id){
+        this.id = id;
+    }
+    
+    public String getjurusan(){
+        return jurusan;
+    }
+    
+    public void setjurusan(String jurusan){
+        this.jurusan = jurusan;
+    }
+    
+    public String getposisi(){
+        return posisi;
+    }
+    
+    public void setposisi(String posisi){
+        this.posisi = posisi;
+    }
+    
+    public String toString(){
+        return String.format("data : %s %s %s %s",nama,id,jurusan,posisi );
+    }
+
+    public static void main (String[] args){
+      Employee pertama = new Employee ("Susan Meyers", 47899, "Marketing", "Sales Rep");
+      Employee kedua = new Employee ("Mark Jones", 39119, "IT", "Progammer");
+      Employee ketiga = new Employee ("Joy Rogers", 81774, "Manufacturing", "Engineer");
+      System.out.println(pertama);
+      System.out.println(kedua);
+      System.out.println(ketiga);
+    }  
+}
